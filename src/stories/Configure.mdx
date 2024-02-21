@@ -1,0 +1,59 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Documentação do Projeto" />
+
+# Documentação do Projeto
+
+Neste documento, descreveremos a estrutura e as tecnologias utilizadas no projeto de visualização da evolução populacional dos bairros.
+
+## Tecnologias Utilizadas
+
+- **Vite.js**: Utilizamos o Vite.js como nossa ferramenta de build para desenvolvimento rápido e eficiente com React e TypeScript.
+- **React**: Escolhemos React como nossa biblioteca principal para desenvolver interfaces de usuário dinâmicas e reativas.
+- **TypeScript**: Utilizamos TypeScript para adicionar tipagem estática ao JavaScript, garantindo maior robustez e prevenindo erros.
+- **Storybook**: Utilizamos o Storybook para documentar e visualizar os componentes do nosso projeto, permitindo um desenvolvimento mais rápido e testes visuais.
+- **react-chartjs-2**: Para a exibição dos gráficos de evolução populacional, utilizamos a biblioteca react-chartjs-2, que oferece uma integração fácil e flexível com o Chart.js.
+- **react-leaflet**: Utilizamos o react-leaflet para renderizar o mapa e visualizar os bairros, proporcionando uma experiência interativa ao usuário.
+- **Cypress**: Para garantir a qualidade do nosso projeto, implementamos testes end-to-end automatizados com o Cypress, permitindo uma validação abrangente da aplicação por meio de simulações de interações do usuário.
+
+## Estrutura do Projeto
+
+population-moray/ <br />
+├── .storybook/ <br />
+├── cypress/ <br />
+│   └── e2e/ <br />
+│       └── map_cy.ts <br />
+├── src/ <br />
+│   ├── components/ <br />
+│   │   ├── Chart/ <br />
+│   │   │   └── index.tsx <br />
+│   │   ├── Map/ <br />
+│   │   │   └── index.tsx <br />
+│   │   └── Modal/ <br />
+│   │       ├── ModalPopulation/ <br />
+│   │       │   └── index.tsx <br />
+│   │       └── ModalWelcome/ <br />
+│   │           └── index.tsx <br />
+│   ├── service/ <br />
+│   ├── stories/ <br />
+│   │   ├── Chart.stories.tsx <br />
+│   │   ├── Configure.mdx <br />
+│   │   └── Map.stories.tsx <br />
+│   │   └── Modal.stories.tsx <br />
+│   └── styles/ <br />
+├── README.md <br />
+
+
+
+Na estrutura acima:
+- **src/**: Contém todo o código-fonte do projeto.
+- **src/components/**: Diretório que contém os componentes do projeto, como ChartComponent e MapComponent.
+- **src/stories/**: Diretório que contém os arquivos de storybook para os componentes.
+- **cypress/**: Diretório que contém os testes end-to-end automatizados com o Cypress.
+- **README.md**: Documentação principal do projeto.
+- **Configure.mdx**: Documentação detalhada sobre a configuração e tecnologias utilizadas no projeto.
+
+
+Este documento fornece uma visão geral da estrutura e das tecnologias utilizadas no projeto, 
+facilitando o entendimento e a manutenção futura. Certifique-se de personalizá-lo de acordo com as 
+especificidades do seu projeto.
